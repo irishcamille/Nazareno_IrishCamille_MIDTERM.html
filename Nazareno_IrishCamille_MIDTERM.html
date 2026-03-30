@@ -1,0 +1,251 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Student Portal</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #9F7C62;
+      color: black;
+    }
+
+    nav {
+      text-align: center;
+      padding: 12px;
+      background-color: #FFF4EC;
+    }
+
+    nav a {
+      color: #5c4636;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 30px;
+    }
+
+    section {
+      margin-bottom: 30px;
+      padding: 25px;
+      border-radius: 15px;
+      background: rgba(255, 244, 236, 0.65);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .inline-group {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-top: 5px;
+    }
+
+    .inline-group input {
+      width: auto;
+    }
+
+    .checkbox-group {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .checkbox-group input {
+      width: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      background: rgba(255, 244, 236, 0.65);
+      backdrop-filter: blur(10px);
+    }
+
+    th {
+      padding: 12px;
+      background: #E8D5C7;
+      color: #5c4636;
+    }
+
+    td {
+      padding: 12px;
+      text-align: center;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      background: #9F7C62;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #7e604b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #9F7C62;
+      color: white;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <h1>STUDENT PORTAL</h1>
+
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main>
+
+    <section>
+
+      <h2>Student Registration Form</h2>
+
+      <form>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate">
+
+        <label>Gender:</label>
+
+        <div class="inline-group">
+
+          <input type="radio" id="male" name="gender">
+          <label for="male">Male</label>
+
+          <input type="radio" id="female" name="gender">
+          <label for="female">Female</label>
+
+        </div>
+
+        <label for="course">Course:</label>
+
+        <select id="course">
+
+          <option>BSIT</option>
+          <option>BSCpE</option>
+          <option>BSCS</option>
+
+        </select>
+
+        <div class="checkbox-group">
+
+          <input type="checkbox" id="agree">
+          <label for="agree">I agree to the terms and conditions</label>
+
+        </div>
+
+        <button type="submit">Register</button>
+
+      </form>
+
+    </section>
+
+    <section>
+
+      <h2>Registered Students</h2>
+
+      <table>
+
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Course</th>
+        </tr>
+
+        <tr>
+          <td>Irish Nazareno</td>
+          <td>irish@gmail.com</td>
+          <td>BSCS</td>
+        </tr>
+
+        <tr>
+          <td>Nadine Bernardo</td>
+          <td>nadz@gmail.com</td>
+          <td>BSCpE</td>
+        </tr>
+
+        <tr>
+          <td>Liza Mariano</td>
+          <td>LizaMariano@gmail.com</td>
+          <td>BSIT</td>
+        </tr>
+
+        <tr>
+          <td>Donny Manalo</td>
+          <td>DonnyMnl@gmail.com</td>
+          <td>BSCS</td>
+        </tr>
+
+      </table>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <p>&copy; 2026 Student Portal. All rights reserved.</p>
+
+  </footer>
+
+</body>
+</html>
